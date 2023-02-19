@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import { SliderInput } from './layout/Form';
+import PropTypes from 'prop-types';
 
-interface Props {
+interface SliderProps {
   id: string;
   min: number;
   max: number;
@@ -10,26 +11,35 @@ interface Props {
   onChangeHandler: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Slider: FC<Props> = ({
-  id,
-  min,
-  max,
-  step,
-  defaultValue,
-  onChangeHandler,
-}) => {
+const Slider: FC<SliderProps> = ({
+                                   id,
+                                   min,
+                                   max,
+                                   step,
+                                   defaultValue,
+                                   onChangeHandler,
+                                 }) => {
   return (
-    <SliderInput
-      type="range"
-      role="slider"
-      id={id}
-      min={min}
-      max={max}
-      step={step}
-      defaultValue={defaultValue}
-      onChange={onChangeHandler}
-    />
+      <SliderInput
+          type="range"
+          role="slider"
+          id={id}
+          min={min}
+          max={max}
+          step={step}
+          defaultValue={defaultValue}
+          onChange={onChangeHandler}
+      />
   );
+};
+
+Slider.propTypes = {
+  id: PropTypes.string.isRequired,
+  min: PropTypes.number.isRequired,
+  max: PropTypes.number.isRequired,
+  step: PropTypes.number.isRequired,
+  defaultValue: PropTypes.number.isRequired,
+  onChangeHandler: PropTypes.func.isRequired,
 };
 
 export default Slider;

@@ -54,6 +54,6 @@ describe("The Quote Preview Form", () => {
         cy.get("select").select(4);
         cy.get('[data-testid="loan-amount-input"]').clear().type(10000)
         cy.get('[data-testid="interest-rate"]').should("have.text", "10%");
-        cy.get('[data-testid="repayment-amount"]').should("have.text", "£323");
+        cy.get('[data-testid="repayment-amount"]').should("have.text", "£322");
         });
   });

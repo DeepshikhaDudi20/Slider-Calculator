@@ -78,7 +78,7 @@ const QuotePreviewForm = () => {
           <EditableField>
             <Input type="number" dataTestId="loan-amount-input" value={amount}
             onChangeHandler={amountChangeHandler}
-            onFocusHandler={amountFocusHandler} min={1000} max={20000}            />
+            onFocusHandler={amountFocusHandler} />
           </EditableField>
         )}
       </FieldWithSlider>

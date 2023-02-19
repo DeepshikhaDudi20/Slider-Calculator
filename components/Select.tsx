@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { EditableSelect } from './layout/Form';
+import PropTypes from 'prop-types';
 
 interface SelectProps {
   dataTestId: string;
@@ -10,23 +11,36 @@ interface SelectProps {
 }
 
 const Select: FC<SelectProps> = ({
-  dataTestId,
-  name,
-  value,
-  options,
-  onChangeHandler,
-}) => {
+                                   dataTestId,
+                                   name,
+                                   value,
+                                   options,
+                                   onChangeHandler,
+                                 }) => {
   return (
-    <>
-      <EditableSelect data-testid={dataTestId} name={name} value={value} onChange={onChangeHandler}>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </EditableSelect>
-    </>
+      <>
+        <EditableSelect data-testid={dataTestId} name={name} value={value} onChange={onChangeHandler}>
+          {options.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+          ))}
+        </EditableSelect>
+      </>
   );
 };
 
 export default Select;
+
+Select.propTypes = {
+  dataTestId: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
+  options: PropTypes.arrayOf(
+      PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        value: PropTypes.string.isRequired,
+      }).isRequired,
+  ).isRequired,
+  onChangeHandler: PropTypes.func.isRequired,
+};
