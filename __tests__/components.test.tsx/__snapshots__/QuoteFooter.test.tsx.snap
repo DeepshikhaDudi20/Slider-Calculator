@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Quote Footer Component should render snapshots 1`] = `
+[
+  <div
+    className="Footer__QuoteFormStats-sc-j8bigy-0 bftBsi"
+  >
+    <div
+      className="Footer__QuoteFormStatFields-sc-j8bigy-1 dtHkZx"
+    >
+      <span
+        className="Footer__Value-sc-j8bigy-2 QZGdB"
+        data-testid="interest-rate"
+      >
+        5
+        %
+      </span>
+      <span
+        className="Footer__Label-sc-j8bigy-3 cFZuPt"
+      >
+        Interest rate
+      </span>
+    </div>
+    <div
+      className="Footer__QuoteFormStatFields-sc-j8bigy-1 dtHkZx"
+    >
+      <span
+        className="Footer__Value-sc-j8bigy-2 QZGdB"
+        data-testid="repayment-amount"
+      >
+        £
+        86
+      </span>
+      <span
+        className="Footer__Label-sc-j8bigy-3 cFZuPt"
+      >
+        Monthly repayment
+      </span>
+    </div>
+  </div>,
+  <div
+    className="Footer__ButtonContainer-sc-j8bigy-4 ilBOR"
+  >
+    <div
+      className="Footer__ButtonWrapper-sc-j8bigy-5 bRPHLH"
+    >
+      <button
+        aria-label="Get your quote"
+        className="Footer__Button-sc-j8bigy-6 hhoPwJ"
+        data-testid="quote-btn"
+        onClick={[Function]}
+      >
+        Get your quote
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-angles-right "
+          data-icon="angles-right"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={{}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L370.7 256 233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L178.7 256 41.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"
+            fill="currentColor"
+            style={{}}
+          />
+        </svg>
+      </button>
+    </div>
+  </div>,
+]
+`;
