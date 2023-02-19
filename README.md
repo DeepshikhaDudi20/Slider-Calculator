@@ -31,7 +31,6 @@ As this project is fairly simple, using Redux is not necessary from an architect
   - Term slider to editable select field
 - Created reusable Input and Select component
 - Added client-side validations to have min and max value on the editable input amount field on focus out
-- Display tooltip if amount is not in the required range
 - Dockerized to run the project locally independent of the system, also to install dependencies faster or to avoid any package version conflict (Node)
 - Used Cypress for e2e testing
 
