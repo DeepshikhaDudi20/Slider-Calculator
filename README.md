@@ -97,5 +97,3 @@ As this project is fairly simple, using Redux is not necessary from an architect
 
 ### App link
 Local :  http://localhost:3000/
-
-### App screenshots
