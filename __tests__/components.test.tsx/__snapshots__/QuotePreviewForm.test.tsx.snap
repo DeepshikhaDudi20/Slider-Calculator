@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Quote Preview Form Component should render snapshots 1`] = `
+<form
+  className="Form__FormContainer-sc-1wozjz1-0 ha-dhje"
+  data-testid="quote-form-preview"
+>
+  <div
+    className="Form__ToggleIcon-sc-1wozjz1-1 cdQdtt"
+  >
+    <svg
+      data-testid="toggle-icon"
+      fill="currentColor"
+      height="1em"
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 512 512"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 168v-16c0-13.255 10.745-24 24-24h360V80c0-21.367 25.899-32.042 40.971-16.971l80 80c9.372 9.373 9.372 24.569 0 33.941l-80 80C409.956 271.982 384 261.456 384 240v-48H24c-13.255 0-24-10.745-24-24zm488 152H128v-48c0-21.314-25.862-32.08-40.971-16.971l-80 80c-9.372 9.373-9.372 24.569 0 33.941l80 80C102.057 463.997 128 453.437 128 432v-48h360c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24z"
+      />
+    </svg>
+  </div>
+  <div
+    className="Form__FieldWithSlider-sc-1wozjz1-2 ipwwtW"
+    data-testid="amount-field"
+  >
+    <label
+      aria-label="loan-amount-label"
+      className="Form__Label-sc-1wozjz1-3 hwjtqU"
+      htmlFor="loan-amount-slider"
+    >
+      I want to borrow
+      <span
+        className="Form__FieldSliderValue-sc-1wozjz1-4 fiMSMo"
+        data-testid="loan-amount"
+        id="loan-amount-value"
+      >
+        £
+        1000
+      </span>
+    </label>
+    <input
+      className="Form__SliderInput-sc-1wozjz1-8 eBKLWQ"
+      defaultValue={1000}
+      id="loan-amount-slider"
+      max={20000}
+      min={1000}
+      onChange={[Function]}
+      role="slider"
+      step={100}
+      type="range"
+    />
+  </div>
+  <div
+    className="Form__FieldWithSlider-sc-1wozjz1-2 ipwwtW"
+    data-testid="term-field"
+  >
+    <label
+      aria-label="loan-term-label"
+      className="Form__Label-sc-1wozjz1-3 hwjtqU"
+      htmlFor="loan-term-slider"
+    >
+      Over
+      <span
+        className="Form__FieldSliderValue-sc-1wozjz1-4 fiMSMo"
+        data-testid="loan-term"
+        id="loan-term-value"
+      >
+        1 Year
+      </span>
+    </label>
+    <input
+      className="Form__SliderInput-sc-1wozjz1-8 eBKLWQ"
+      defaultValue={12}
+      id="loan-term-slider"
+      max={60}
+      min={12}
+      onChange={[Function]}
+      role="slider"
+      step={6}
+      type="range"
+    />
+  </div>
+  <div
+    className="Footer__QuoteFormStats-sc-j8bigy-0 bftBsi"
+  >
+    <div
+      className="Footer__QuoteFormStatFields-sc-j8bigy-1 dtHkZx"
+    >
+      <span
+        className="Footer__Value-sc-j8bigy-2 cMOfLq"
+        data-testid="interest-rate"
+      >
+        5
+        %
+      </span>
+      <span
+        className="Footer__Label-sc-j8bigy-3 fmjiBb"
+      >
+        Interest rate
+      </span>
+    </div>
+    <div
+      className="Footer__QuoteFormStatFields-sc-j8bigy-1 dtHkZx"
+    >
+      <span
+        className="Footer__Value-sc-j8bigy-2 cMOfLq"
+        data-testid="repayment-amount"
+      >
+        £
+        86
+      </span>
+      <span
+        className="Footer__Label-sc-j8bigy-3 fmjiBb"
+      >
+        Monthly repayment
+      </span>
+    </div>
+  </div>
+  <div
+    className="Footer__ButtonContainer-sc-j8bigy-4 ilBOR"
+  >
+    <div
+      className="Footer__ButtonWrapper-sc-j8bigy-5 bRPHLH"
+    >
+      <button
+        aria-label="Get your quote"
+        className="Footer__Button-sc-j8bigy-6 hhoPwJ"
+        data-testid="quote-btn"
+        onClick={[Function]}
+      >
+        Get your quote
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-angles-right "
+          data-icon="angles-right"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={{}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"
+            fill="currentColor"
+            style={{}}
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</form>
+`;

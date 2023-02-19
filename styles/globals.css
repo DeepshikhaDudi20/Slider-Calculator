@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right top, #d70d6b, #b42680, #8a368a, #5d3e88, #323f7b);
+    background-attachment: fixed;
+}
