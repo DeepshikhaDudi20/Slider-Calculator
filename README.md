@@ -31,7 +31,7 @@ The project has been developed using the TDD approach with React Testing Library
 - Added client-side validations to have min and max value on the editable input amount field on focus out 
 - Display tooltip if amount is not in the required range
 - Dockerized to run the project locally independent of the system, also to install dependencies faster or to avoid any package version conflict (Node)
-- Deployed app on Vercel (https://slider-calculator.vercel.app/)
+- Deployed app on Vercel (https://slider-calculator-project.vercel.app/)
 - Used Cypress for e2e testing
 
 
@@ -97,7 +97,9 @@ The project has been developed using the TDD approach with React Testing Library
 
 ### App link
 Local :  http://localhost:3000/
-Prod  :  https://slider-calculator.vercel.app/
+Prod  :  https://slider-calculator-project.vercel.app/
 
-### App screenshots
-
+### App screenshots - Mobile & Desktop view
+![Screenshot](https://github.com/DeepshikhaDudi20/Slider-Calculator/blob/master/App_Screenshot/Desktop_Chrome.png)
+![Screenshot](https://github.com/DeepshikhaDudi20/Slider-Calculator/blob/master/App_Screenshot/Mobile_%20Samsung.png)
+![Screenshot](https://github.com/DeepshikhaDudi20/Slider-Calculator/blob/master/App_Screenshot/Mobile_IOS_Safari.png)
