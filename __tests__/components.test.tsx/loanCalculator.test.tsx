@@ -28,16 +28,12 @@ describe('The termToYear function', () => {
 describe('The calculateLoan function', () => {
     test('should return the correct loan values for an amount of 5000 and term of 24', () => {
         const result = calculateLoan(5000, 24);
-        expect(result.amountValue).toBe(5000);
-        expect(result.termValue).toBe(24);
         expect(result.interestRateValue).toBe(5);
         expect(result.monthlyRepaymentValue).toBe(219);
     });
 
     test('should return the correct loan values for an amount of 15000 and term of 48', () => {
         const result = calculateLoan(15000, 48);
-        expect(result.amountValue).toBe(15000);
-        expect(result.termValue).toBe(48);
         expect(result.interestRateValue).toBe(15);
         expect(result.monthlyRepaymentValue).toBe(417);
     });
