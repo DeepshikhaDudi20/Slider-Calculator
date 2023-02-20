@@ -24,9 +24,8 @@ const QuotePreviewForm = () => {
       let amountInputValue = parseInt(e.currentTarget.value);
       if (amountInputValue < formData.amountMinValue) amountInputValue = formData.amountMinValue;
       if (amountInputValue > formData.amountMaxValue) amountInputValue = formData.amountMaxValue;
-      const { amountValue, termValue, interestRateValue, monthlyRepaymentValue } = calculateLoan(amountInputValue, term)
-      setAmount(amountValue)
-      setTerm(termValue)
+      setAmount(amountInputValue)
+      const { interestRateValue, monthlyRepaymentValue } = calculateLoan(amountInputValue, term)
       setError(false)
       setInterestRate(interestRateValue)
       setMonthlyRepayment(monthlyRepaymentValue)
@@ -41,18 +40,17 @@ const QuotePreviewForm = () => {
   // In case of amount input, display tooltip if amount value is outside desired range and set shows error tip based on result
   const amountChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     try {
-      let amount = parseInt(e.target.value);
+      let amountValue = parseInt(e.target.value);
       if (e.target.id === 'loan-amount-slider') {
-        const { amountValue, termValue, interestRateValue, monthlyRepaymentValue } = calculateLoan(amount, term)
         setAmount(amountValue)
-        setTerm(termValue)
+        const { interestRateValue, monthlyRepaymentValue } = calculateLoan(amountValue, term)
         setInterestRate(interestRateValue)
         setMonthlyRepayment(monthlyRepaymentValue)
       }
       else {
-        setAmount(amount)
+        setAmount(amountValue)
         setError(false)
-        if (amount < formData.amountMinValue || amount > formData.amountMaxValue) {
+        if (amountValue < formData.amountMinValue || amountValue > formData.amountMaxValue) {
           setError(true)
         }
       }
@@ -65,9 +63,9 @@ const QuotePreviewForm = () => {
   // Called on term slider input or select change, sets all other required values based on calculateLoan function result
   const termChangeHandler = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLSelectElement>) => {
     try {
-      const { amountValue, termValue, interestRateValue, monthlyRepaymentValue } = calculateLoan(amount, parseInt(e.target.value))
-      setAmount(amountValue)
+      let termValue = parseInt(e.target.value);
       setTerm(termValue)
+      const { interestRateValue, monthlyRepaymentValue } = calculateLoan(amount, termValue)
       setInterestRate(interestRateValue)
       setMonthlyRepayment(monthlyRepaymentValue)
     }

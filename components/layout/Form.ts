@@ -3,8 +3,8 @@ import { colors } from '../../styles/color';
 
 export const ToolTip = styled.div`
   position: absolute;
-  left: 42%;
-  top: 33%;
+  left: 45%;
+  top: 34%;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -21,6 +21,7 @@ export const ToolTip = styled.div`
   display: inline-block;
   margin-top: -5px;
   background-color: #002649;
+  
   @media (max-width: 768px) {
     left: 57%;
     transform: translateX(-50%);
