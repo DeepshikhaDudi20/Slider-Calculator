@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { EditableInput } from './layout/Form';
-import PropTypes from 'prop-types';
 
 interface InputProps {
   type: string;
@@ -20,14 +19,6 @@ const Input: FC<InputProps> = (props) => {
       onBlur={props.onFocusHandler}
     />
   );
-};
-
-Input.propTypes = {
-  type: PropTypes.string.isRequired,
-  dataTestId: PropTypes.string.isRequired,
-  value: PropTypes.number.isRequired,
-  onChangeHandler: PropTypes.func.isRequired,
-  onFocusHandler: PropTypes.func,
 };
 
 export default Input;

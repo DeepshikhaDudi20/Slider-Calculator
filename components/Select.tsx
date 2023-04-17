@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { EditableSelect } from './layout/Form';
-import PropTypes from 'prop-types';
 
 interface SelectProps {
   dataTestId: string;
@@ -31,16 +30,3 @@ const Select: FC<SelectProps> = ({
 };
 
 export default Select;
-
-Select.propTypes = {
-  dataTestId: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  value: PropTypes.number.isRequired,
-  options: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string.isRequired,
-      value: PropTypes.string.isRequired,
-    }).isRequired,
-  ).isRequired,
-  onChangeHandler: PropTypes.func.isRequired,
-};

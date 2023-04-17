@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { SliderInput } from './layout/Form';
-import PropTypes from 'prop-types';
 
 interface SliderProps {
   id: string;
@@ -31,15 +30,6 @@ const Slider: FC<SliderProps> = ({
       onChange={onChangeHandler}
     />
   );
-};
-
-Slider.propTypes = {
-  id: PropTypes.string.isRequired,
-  min: PropTypes.number.isRequired,
-  max: PropTypes.number.isRequired,
-  step: PropTypes.number.isRequired,
-  defaultValue: PropTypes.number.isRequired,
-  onChangeHandler: PropTypes.func.isRequired,
 };
 
 export default Slider;
