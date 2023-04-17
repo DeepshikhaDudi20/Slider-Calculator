@@ -27,3 +27,8 @@ export const termOptions = [
     { value: "54", label: "4½ Years" },
     { value: "60", label: "5 Years" }
   ]
+
+  export const validationMessage = {
+   termValidationMessage: 'Term should be in range of 1 year to 5 years',
+   amountValidationMessage: 'Amount should be in range of £1000 to £20000'
+  }

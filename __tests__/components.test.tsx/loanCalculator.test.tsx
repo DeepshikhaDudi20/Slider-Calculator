@@ -1,4 +1,6 @@
 import { termToYear, calculateLoan } from '../../utils/loanCalculator';
+import { validationMessage } from '../../AppData/constants';
+
 describe('The termToYear function', () => {
     it('should convert 12 months to 1 Year', () => {
         expect(termToYear(12)).toEqual('1 Year');
@@ -17,11 +19,11 @@ describe('The termToYear function', () => {
     });
 
     it("should throw an error if termInMonths is less than 12", () => {
-        expect(() => termToYear(6)).toThrow("Term should be in range of 1 year to 5 years");
+        expect(() => termToYear(6)).toThrow(validationMessage.termValidationMessage);
     });
 
     it("should throw an error if termInMonths is greater than 60", () => {
-        expect(() => termToYear(72)).toThrow("Term should be in range of 1 year to 5 years");
+        expect(() => termToYear(72)).toThrow(validationMessage.termValidationMessage);
     });
 });
 
@@ -39,19 +41,19 @@ describe('The calculateLoan function', () => {
     });
 
     test('should throw an error if amount is less than 1000', () => {
-        expect(() => calculateLoan(500, 24)).toThrow('Amount should be in range of £1000 to £20000');
+        expect(() => calculateLoan(500, 24)).toThrow(validationMessage.amountValidationMessage);
     });
 
     test('should throw an error if amount is greater than 20000', () => {
-        expect(() => calculateLoan(25000, 24)).toThrow('Amount should be in range of £1000 to £20000');
+        expect(() => calculateLoan(25000, 24)).toThrow(validationMessage.amountValidationMessage);
     });
 
     test('should throw an error if term is less than 12 months', () => {
-        expect(() => calculateLoan(5000, 6)).toThrow('Term should be in range of 1 year to 5 years');
+        expect(() => calculateLoan(5000, 6)).toThrow(validationMessage.termValidationMessage);
     });
 
     test('should throw an error if term is greater than 60 months', () => {
-        expect(() => calculateLoan(5000, 72)).toThrow('Term should be in range of 1 year to 5 years');
+        expect(() => calculateLoan(5000, 72)).toThrow(validationMessage.termValidationMessage);
     });
 
 });
